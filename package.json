@@ -1,0 +1,52 @@
+{
+  "name": "angular-spawn-x",
+  "version": "1.0.0",
+  "description": "Angular connector for spawn-x. (Reactive management for javaScript applications)",
+  "author": "AlexPlex",
+  "license": "MIT",
+  "main": "./lib/angular-spawn-x.umd.js",
+  "module": "./index.js",
+  "typings": "./index.d.ts",
+  "homepage": "https://github.com/atellmer/angular-spawn-x",
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "webpack",
+    "build:prod": "set WEBPACK_ENV=build:prod&& webpack",
+    "dev": "set WEBPACK_ENV=dev&& webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atellmer/angular-spawn-x.git"
+  },
+  "keywords": [
+    "state",
+    "store",
+    "app",
+    "management",
+    "control",
+    "predictable",
+    "live",
+    "observer",
+    "reactive",
+    "redux",
+    "flux",
+    "mobx",
+    "observable",
+    "rxjs",
+    "angular",
+    "@angular"
+  ],
+  "dependencies": {
+    "spawn-x": "^2.3.5"
+  },
+  "devDependencies": {
+    "husky": "^0.13.2",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "2.2.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.4.9",
+    "rxjs": "^5.2.0"
+  }
+}
