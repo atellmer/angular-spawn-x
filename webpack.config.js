@@ -18,7 +18,7 @@ if (env === 'build:prod') {
 const config = {
   externals: {
     '@angular/core': {
-      root: 'ng.core',
+      root: ['ng', 'core'],
       commonjs2: '@angular/core',
       commonjs: '@angular/core',
       amd: '@angular/core'

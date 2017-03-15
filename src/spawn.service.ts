@@ -65,7 +65,7 @@ export class NgSpawn {
       }
 
       if (isUndefined(zone) || isUndefined(selector)) {
-        return error(`@angular/spawn-x: incorrect arguments for selection`);
+        return error(`angular-spawn-x: incorrect arguments for selection`);
       }
 
       detect({ zone, component, key, selector });
